@@ -12,7 +12,6 @@ import { Calendar } from "@/components/ui/calendar";
 import { FileText, Hammer, Users, Building2, Wrench, CalendarDays, User2 } from "lucide-react";
 import jsPDF from "jspdf";
 
-// Firebase
 import { initializeApp } from "firebase/app";
 import {
   getFirestore, collection, addDoc, getDocs, deleteDoc, doc, getAuth, signInWithEmailAndPassword, onAuthStateChanged
@@ -32,5 +31,5 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
 export default function DNCBauApp() {
-  return <div className="p-6 text-xl font-semibold">DNC BauApp – App-Code integriert</div>;
+  return <div className="p-6 text-xl font-semibold">DNC BauApp läuft!</div>;
 }
